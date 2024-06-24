@@ -25,7 +25,7 @@ async def on_ready():
     print(f'Logged in as {bot.user}')
     print(f'ID: {bot.user.id}')
     print('===========================')
-
+    await bot.change_presence(activity=discord.Game(name="Workin'"))
 
 @bot.command()
 async def hi(ctx):
@@ -63,10 +63,6 @@ async def decider(ctx):
     ]
     answer = random.choice(possibilities)
     await ctx.send(answer)
-
-
-
-
 
 
 
