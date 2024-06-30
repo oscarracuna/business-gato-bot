@@ -64,6 +64,10 @@ async def decider(ctx):
     answer = random.choice(possibilities)
     await ctx.send(answer)
 
+# Space for cat API
+# @bot.command()
+# async def cat(ctx):
+
 
 
 bot.run(os.getenv("BOT_TOKEN"))
