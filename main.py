@@ -67,7 +67,13 @@ async def decider(ctx):
 # Space for cat API
 # @bot.command()
 # async def cat(ctx):
+@bot.command(aliases=['status'])
+async def up(ctx):
+    await ctx.send("We're up and running!")
 
-
+@bot.command(aliases=['server'])
+async def servers(ctx)
+    guild_count = len(client.guilds)
+    await ctx.send(f"We're currently on {guild.count} server(s)")
 
 bot.run(os.getenv("BOT_TOKEN"))
